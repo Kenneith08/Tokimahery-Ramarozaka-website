@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header class="navbar">
+        <div class="logo">
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html"><img src="logo.png" alt="T. Ramarozaka"></a>
+        </div>
+        <nav>
+            <a href="index.html">
+                <img src="house-solid-full.svg" class="nav-icon">
+                HOME
+            </a>
+            <a href="blog.html">
+                <img src="file-solid-full.svg" class="nav-icon">
+                BLOG
+            </a>
+            <a href="courses.html">
+                <img src="book-solid-full.svg" class="nav-icon">
+                COURSES
+            </a>
+            <a href="testimonial.html">
+                <img src="comment-solid-full.svg" class="nav-icon">
+                TESTIMONIALS
+            </a>
+            <a href="research.html">
+                <img src="magnifying-glass-solid-full.svg" class="nav-icon">
+                RESEARCH
+            </a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search anything...">
+            <div class="cart-icon-wrapper">
+                <img src="cart-arrow-down-solid-full.svg" alt="Cart icon">
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+    <div id="cartPanel" class="cart-panel hidden">
+        <h2>Your cart</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal">Total: 0 Ar</div>
+    </div>
+    <section class="blog-header">
+        <div class="tag center">
+            <span></span>
+            WRITING
+            <span></span>
+        </div>
+        <h1>The <span>blog</span></h1>
+        <p class="blog-sub">
+            Thoughts on teaching, software engineering, languages,
+            and everything in between.
+        </p>
+    </section>
+    <section class="blog-container">
+        <div class="posts-container">
+            <div class="posts" id="posts"></div>
+            <div class="pagination">
+                <div class="page" id="prev">← Prev</div>
+                <div class="page page-number">1</div>
+                <div class="page page-number">2</div>
+                <div class="page" id="next">Next →</div>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="side-box">
+                <div class="side-title tag"><span></span>ARCHIVES</div>
+                <div id="archives"></div>
+            </div>
+            <div class="side-box newsletter">
+                <div class="side-title tag"><span></span>NEWSLETTER</div>
+                <p style="font-size:0.7vw;margin-bottom:1vh;">
+                    Get new articles straight to your inbox.
+                    No spam, ever.
+                </p>
+                <input type="email" placeholder="your@email.com">
+                <button>SUBSCRIBE</button>
+            </div>
+            <div class="side-box">
+                <div class="side-title tag"><span></span>ON YOUTUBE</div>
+                <div id="videos"></div>
+                <div class="view-all">
+                    <a href="#">VIEW ALL VIDEOS →</a>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <section class="blog-cta">
+        <h2>Want to go deeper?</h2>
+        <p>
+            Explore the courses or get in touch for a consultation.
+        </p>
+        <div class="cta-buttons">
+            <button class="cta-light"><a href="courses.html">BROWSE COURSES</a></button>
+            <button class="cta-outline"><a href="contact.html">COLLABORATE</a></button>
+        </div>
+    </section>
+    <script src="all.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html"><img src="logo.png" alt="T. Ramarozaka"></a>
+        </div>
+        <nav>
+            <a href="index.html">
+                <img src="house-solid-full.svg" class="nav-icon">
+                HOME
+            </a>
+            <a href="blog.html">
+                <img src="file-solid-full.svg" class="nav-icon">
+                BLOG
+            </a>
+            <a href="courses.html">
+                <img src="book-solid-full.svg" class="nav-icon">
+                COURSES
+            </a>
+            <a href="testimonial.html">
+                <img src="comment-solid-full.svg" class="nav-icon">
+                TESTIMONIALS
+            </a>
+            <a href="research.html">
+                <img src="magnifying-glass-solid-full.svg" class="nav-icon">
+                RESEARCH
+            </a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search anything...">
+            <div class="cart-icon-wrapper">
+                <img src="cart-arrow-down-solid-full.svg" alt="Cart icon">
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+    <section class="courses-page-header">
+        <h1>All <span>courses</span></h1>
+        <p class="courses-sub">
+            Online and offline courses across development,
+            translation, and research.
+        </p>
+    </section>
+    <div id="cartPanel" class="cart-panel hidden">
+        <h2>Your cart</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal">Total: 0 Ar</div>
+    </div>
+    <section class="courses-filters">
+        <div class="filter-group">
+            <div class="filter">
+                <div class="filter-label">LANGUAGE</div>
+                <div class="flags">
+                    <span data-lang="MG">🇲🇬</span>
+                    <span data-lang="FR">🇫🇷</span>
+                    <span data-lang="EN">🇬🇧</span>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filter-label">TECHNOLOGY</div>
+                <select id="techFilter">
+                    <option value="all">All technologies</option>
+                    <option value="javascript">javascript</option>
+                    <option value="java">java</option>
+                    <option value="sql">sql</option>
+                </select>
+            </div>
+            <div class="filter">
+                <div class="filter-label">LEVEL</div>
+                <select id="levelFilter">
+                    <option value="all">All levels</option>
+                    <option value="beginner">beginner</option>
+                    <option value="intermediate">intermediate</option>
+                    <option value="advanced">advanced</option>
+                </select>
+            </div>
+            <div class="filter price">
+                <div class="filter-label">PRICE RANGE <span class="price-text" id="priceText">0 Ar – 300,000 Ar</span>
+                </div>
+                <input class="price-filter" id="priceMin" type="range" min="0" max="300000" value="0">
+                <input class="price-filter" id="priceMax" type="range" min="0" max="300000" value="300000">
+            </div>
+
+            <div class="filter search-courses">
+                <div class="filter-label">SEARCH</div>
+                <input id="searchFilter" type="text" placeholder="Keywords...">
+            </div>
+            <div class="clear" id="clearFilters">
+                CLEAR ALL
+            </div>
+        </div>
+    </section>
+    <section class="courses-grid" id="coursesGrid"></section>
+    <footer class="collab-footer">
+        <h2>NOT SURE WHERE TO START ?</h2>
+        <p>Book a free discovery call and find the course that fits your goals and schedule</p>
+        <button class="cta-outline"><a href="contact.html">GET IN TOUCH</a></button>
+    </footer>
+    <script src="all.js"></script>
+
+</body>
+
+</html>

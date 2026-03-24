@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-white">
+    <header class="navbar">
+        <div class="logo">
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html"><img src="logo.png" alt="T. Ramarozaka"></a>
+        </div>
+        <nav>
+            <a href="index.html">
+                <img src="house-solid-full.svg" class="nav-icon">
+                HOME
+            </a>
+            <a href="blog.html">
+                <img src="file-solid-full.svg" class="nav-icon">
+                BLOG
+            </a>
+            <a href="courses.html">
+                <img src="book-solid-full.svg" class="nav-icon">
+                COURSES
+            </a>
+            <a href="testimonial.html">
+                <img src="comment-solid-full.svg" class="nav-icon">
+                TESTIMONIALS
+            </a>
+            <a href="research.html">
+                <img src="magnifying-glass-solid-full.svg" class="nav-icon">
+                RESEARCH
+            </a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search anything...">
+            <div class="cart-icon-wrapper">
+                <img src="cart-arrow-down-solid-full.svg" alt="Cart icon">
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+    <div id="cartPanel" class="cart-panel hidden">
+        <h2>Your cart</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal">Total: 0 Ar</div>
+    </div>
+    <section class="testimonials-header">
+        <div class="testimonials-tag">
+            <span></span>
+            SOCIAL PROOF
+            <span></span>
+        </div>
+        <h1>What people <span>say</span></h1>
+        <p class="testimonials-sub">
+            Hundreds of students, collaborators, and clients have trusted Tokimahery's expertise.
+            Here's what they have to say.
+        </p>
+    </section>
+    <section class="testimonials-section">
+        <div class="testimonials-block">
+
+            <div class="block-title">
+                <span></span>
+                STUDENTS
+            </div>
+            <div id="students" class="testimonials-grid"></div>
+        </div>
+        <div class="testimonials-block-collaborators">
+            <div class="block-title">
+                <span></span>
+                COLLABORATORS
+            </div>
+            <div id="collaborators" class="testimonials-grid-collaborator"></div>
+        </div>
+        <div class="testimonials-block">
+            <div class="block-title">
+                <span></span>
+                CUSTOMERS
+            </div>
+            <div id="customers" class="testimonials-grid"></div>
+        </div>
+    </section>
+    <section class="testimonials-cta">
+        <h2>Join them.</h2>
+        <p>
+            Whether you want to learn, collaborate, or get something built —
+            Tokimahery is ready to help you move forward.
+        </p>
+        <div class="cta-buttons">
+            <button class="cta-light"><a href="courses.html">BOOK A COURSE</a></button>
+            <button class="cta-outline"><a href="contact.html">COLLABORATE</a></button>
+        </div>
+    </section>
+    <script src="all.js"></script>
+</body>
+
+</html>
